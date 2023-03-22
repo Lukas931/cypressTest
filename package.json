@@ -1,0 +1,26 @@
+{
+    "name": "gmail",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "-": "0.0.1",
+        "cypress-cucumber-preprocessor": "^4.3.1",
+        "save-dev": "0.0.1-security"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "step_definitions": "cypress/e2e/integration/Tests/**/"
+    },
+    "devDependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^15.1.5",
+        "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+        "cypress": "^12.8.1",
+        "esbuild": "^0.17.12"
+    }
+}
